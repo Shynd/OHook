@@ -111,8 +111,6 @@ namespace OLoader
 
                     args = new string[] { Console.ReadLine() };
 
-                    //Console.ReadLine();
-
                     if (string.IsNullOrEmpty(args[0])) return;
                 }
                 else
@@ -124,39 +122,6 @@ namespace OLoader
                 var p = Process.GetProcessesByName(args[0]);
                 targetPid = p[0].Id;
             }
-
-            //// Load any parameters
-            //while ((args.Length != 1) || !int.TryParse(args[0], out targetPid) || !File.Exists(args[0]))
-            //{
-            //    if (targetPid > 0)
-            //    {
-            //        break;
-            //    }
-            //    if (args.Length != 1 || !File.Exists(args[0]))
-            //    {
-            //        Console.WriteLine("Usage: OLoader ProcessID");
-            //        Console.WriteLine("   or: OLoader ProcessName");
-            //        Console.WriteLine("");
-            //        Console.WriteLine("e.g  : OLoader 1234");
-            //        Console.WriteLine("           to monitor an existing process with PID 1234");
-            //        Console.WriteLine(@"   or: OLoader ""Notepad.exe""");
-            //        Console.WriteLine("           monitor an existing process with the name notepad.exe");
-            //        Console.WriteLine("");
-            //        Console.WriteLine("Enter a process Id or name");
-            //        Console.Write("> ");
-
-            //        args = new string[] { Console.ReadLine() };
-
-            //        //Console.ReadLine();
-
-            //        if (string.IsNullOrEmpty(args[0])) return;
-            //    }
-            //    else
-            //    {
-            //        targetExe = args[0];
-            //        break;
-            //    }
-            //}
         }
     }
 }
