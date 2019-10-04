@@ -10,7 +10,6 @@ namespace OHook
      * \author  Shynd
      * \date    21.07.2018
      */
-
     public class ServerInterface : MarshalByRefObject
     {
         private string _backgroundImage;
@@ -74,7 +73,6 @@ namespace OHook
          * \author  Shynd
          * \date    21.07.2018
          */
-
         public void Ping()
         {
             var oldTop = Console.CursorTop;
